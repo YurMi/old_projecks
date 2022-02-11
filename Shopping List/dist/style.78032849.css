@@ -1,0 +1,97 @@
+* {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  box-sizing: border-box;
+}
+body {
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+  background-color: rgba(181, 49, 1, 0.666);
+  width: 100vw;
+  height: 100vh;
+}
+.wrapper{
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.shopping-list {
+  min-height: 300px;
+  width: 400px;
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  word-wrap: break-word;
+}
+.shopping {
+  display: flex;
+  justify-content: space-between;
+  word-wrap: break-word;
+}
+.shopping__input{
+  width: 100%;
+  padding: 5px 10px;
+  border: 1px solid  rgba(85, 70, 70, 0.966);
+  border-radius:  5px 0 0px 5px;
+}
+.shopping__btn{
+  width: 90px;
+  cursor: pointer;
+  background-color: tomato;
+  transition: .4s ease;
+  border: none;
+  border-radius:  0 5px 5px 0;
+  color: #fff;
+}
+/* Список */
+.list_ul{
+  list-style: none;
+  padding: 0px 10px;
+  margin: 20px 0px 0px 0px;
+}
+.shopping__item_li input{
+  display: flex;
+  margin: 5px 10px 0px 0px;
+}
+.shopping__item_li{
+  display: flex;
+  margin: 0px 0px 5px 0px;
+  padding: 0px 10px 5px 10px;
+  border-bottom: 1px solid rgba(85, 70, 70, 0.123);
+  border-radius: 105px;
+  word-wrap: break-word;
+}
+.shopping__item_li button{
+  background-color: tomato;
+  border: none;
+  border-radius: 5px;
+  min-width: 20px;
+  height: 20px;
+  color: #fff;
+  cursor: pointer;
+  transition: .4s ease;
+  margin: 2px 0px 0px 5px;
+}
+.shopping__btn:hover,
+.shopping__item_li button:hover{
+    background-color: rgb(187, 75, 55);
+}
+.shopping__item_li input{
+  flex: 0 0 5%;
+}
+.shopping__item_span{
+  color: #000;
+  width: 255px;
+  flex:  0 0 80%;
+  word-wrap: break-word;
+}
+.shopping__item_li button{
+  flex: 0 0 5%;
+}
+
+/*# sourceMappingURL=/style.78032849.css.map */

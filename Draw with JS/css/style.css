@@ -1,0 +1,51 @@
+body{
+    background-color: lightblue;
+}
+.canvas{
+    width: 500px;
+    height: 300px;
+    border: 10px solid red;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 1px 20px rgba(0,0,0,0.5);
+    margin: 0px 0px 10px 0px;
+}
+.canvas.shake{
+    animation: shake 0.5s linear 1;
+}
+@keyframes shake {
+    10%,
+    90%{
+        transform: translate(-28px,0);
+    }
+    20%,
+    80%{
+        transform: translate(2px,0);
+    }
+
+    30%,
+    50%,
+    70%{
+        transform: translate(-58px,0);
+    }
+    40%,
+    60%{
+        transform: translate(2px,0);
+    }
+}
+
+
+.shake_btn{
+    cursor: pointer;
+    background-color: rgb(223, 92, 69);
+    border: none;
+    border-radius: 10px;
+    padding: 8px 15px;
+    color: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+    transition: .4s ease;
+}
+.shake_btn:hover{
+    background-color: tomato;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+}

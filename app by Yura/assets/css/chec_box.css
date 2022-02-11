@@ -1,0 +1,101 @@
+
+
+
+/* Switch 4 Specific Style Start */
+.swich_conteiner{
+  color: #fff;
+  margin: 0px 0px 10px 0px;
+}
+.switch_box{
+    display: inline-block;
+}
+
+.switch_box_2.active{
+  position: relative;
+  z-index: 4;
+}
+
+.input_wrapper{
+  width: 130px;
+  height: 40px;
+  position: relative;
+  cursor: pointer;
+}
+
+.input_wrapper input[type="checkbox"]{
+  width: 130px;
+  height: 40px;
+  cursor: pointer;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: #315e7f;
+  border-radius: 2px;
+  position: relative;
+  outline: 0;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.input_wrapper input[type="checkbox"]:after{
+  position: absolute;
+  content: "";
+  top: 3px;
+  left: 3px;
+  width: 34px;
+  height: 34px;
+  background: #dfeaec;
+  z-index: 2;
+  border-radius: 2px;
+  -webkit-transition: all .35s;
+  transition: all .35s;
+}
+.is_checked,
+.is_unchecked{
+  pointer-events: none;
+}
+ .for_checing{
+  display: none;
+} 
+
+.for_checing.is_checked{
+  display: block;
+} 
+.input_wrapper .is_checked{
+  position: absolute;
+  top: 20px;
+  width: 73px;
+  left: 7px;
+  -webkit-transform: translateX(190%) translateY(-30%) scale(0);
+          transform: translateX(190%) translateY(-30%) scale(0);
+}
+
+.input_wrapper .is_unchecked{
+  position: absolute;
+  top: 20px;
+  max-width: 100px;
+  word-wrap: break-word;
+  left: 31%;
+  -webkit-transform: translateX(0) translateY(-30%) scale(1);
+          transform: translateX(0) translateY(-30%) scale(1);
+}
+
+/* Checked State */
+.input_wrapper input[type="checkbox"]:checked{
+  background: #23da87;
+}
+
+.input_wrapper input[type="checkbox"]:checked:after{
+  left: calc(100% - 37px);
+}
+
+.input_wrapper input[type="checkbox"]:checked + .is_checked{
+  -webkit-transform: translateX(0) translateY(-30%) scale(1);
+          transform: translateX(0) translateY(-30%) scale(1);
+}
+
+.input_wrapper input[type="checkbox"]:checked ~ .is_unchecked{
+  -webkit-transform: translateX(-190%) translateY(-30%) scale(0);
+          transform: translateX(-190%) translateY(-30%) scale(0);
+}
+
